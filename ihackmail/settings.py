@@ -60,12 +60,20 @@ MIDDLEWARE_CLASSES = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'ihackme.urls'
+ROOT_URLCONF = 'ihackmail.urls'
+
+# Add static folder to STATIC_DIRS
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'templates'),
+            os.path.join(BASE_DIR, 'log/templates/log'),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -78,9 +86,9 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'ihackme.wsgi.application'
+WSGI_APPLICATION = 'ihackmail.wsgi.application'
 
-
+LOGIN_REDIRECT_URL = '/log' # It means home view
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
