@@ -7,7 +7,17 @@
     ----------------------------------------------------------------- 
 
 
-Welcome to your Django project on Cloud9 IDE!
+Welcome to your ihackmail Django project using Cloud9 IDE!
+
+ihackmail allows you to find email addresses from a given domain either from a company,
+school, organization etc. It crawls the site and find all the valid email addresses
+and exports them to your account. You can create an account and Ihackmail will email
+the results directly from ihackmail to you.
+
+
+
+
+## Running from Cloud9 IDE
 
 Your Django project is already fully setup. Just click the "Run" button to start
 the application. On first run you will be asked to create an admin user. You can
