@@ -22,6 +22,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '0h3-*6^!7nrv2a=^5)63(7v18y4vm06e1xt*el9p!9vhw1px4b'
 
+SPARKPOST_API_KEY = 'e7b95960fa37e31258fb653ab55cc99afe7b0f2a'
+EMAIL_BACKEND = 'sparkpost.django.email_backend.SparkPostEmailBackend'
+
+SPARKPOST_OPTIONS = {
+    'track_opens': False,
+    'track_clicks': False,
+    'transactional': True,
+}
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
