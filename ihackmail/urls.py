@@ -26,5 +26,7 @@ urlpatterns = [
     url(r'^log/', include('log.urls')),
     url(r'^login/$', views.login, {'template_name': 'login.html', 'authentication_form': LoginForm}),
     url(r'^logout/$', views.logout, {'next_page': '/login'}),
+    url(r'^accounts/', include('registration.backends.simple.urls')),
+    # url(r'^accounts/', include('django.contrib.auth.urls', namespace="auth")),
 ]
 #url(r'^$', views.index, name='index'),

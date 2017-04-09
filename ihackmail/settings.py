@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'bootstrap3',
+    'registration',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -132,6 +134,8 @@ USE_L10N = True
 
 USE_TZ = True
 
+ACCOUNT_ACTIVATION_DAYS = 7 # One-week activation window
+REGISTRATION_AUTO_LOGIN = True # Automatically log the user in.
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
