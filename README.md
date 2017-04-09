@@ -14,6 +14,9 @@ school, organization etc. It crawls the site and find all the valid email addres
 and exports them to your account. You can create an account and Ihackmail will email
 the results directly from ihackmail to you.
 
+NOT RUNING IMPORT ERROR not letting me read app modules.
+
+
 
 
 
