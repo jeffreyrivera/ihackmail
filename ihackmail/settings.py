@@ -34,7 +34,7 @@ SPARKPOST_OPTIONS = {
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ihackme-jeffsadic.c9users.io',]
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 
@@ -137,3 +137,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+INSTALLED_APPS += ('myapp','myapp.django_app.default',)
